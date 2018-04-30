@@ -5,9 +5,9 @@ import { setupApplicationTest } from 'ember-qunit';
 module('Acceptance | ember quickstart', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /ember-quickstart', async function(assert) {
-    await visit('/ember-quickstart');
+  test('visiting /', async function(assert) {
+    await visit('/');
 
-    assert.equal(currentURL(), '/ember-quickstart');
+    assert.equal(currentURL(), '/');
   });
 });
