@@ -23,5 +23,10 @@ module('Acceptance | ember quickstart', function(hooks) {
   test('should show details for a selected rental', async function (assert) {
   });
 
+  test('should show rentals as the home page', async function (assert) {
+  	await visit('/');
+  	assert.equal(currentURL(), '/rentals', 'should redirect automatically');
+  });
+
 
 });
