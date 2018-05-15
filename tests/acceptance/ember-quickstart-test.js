@@ -1,9 +1,11 @@
 import { module, test } from 'qunit';
 import { visit, currentURL, click } from '@ember/test-helpers';
+import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | ember quickstart', function(hooks) {
   setupApplicationTest(hooks);
+  setupMirage(hooks);
 
   test('should list available rentals.', async function(assert) {
     await visit('/');
